@@ -1,2 +1,0 @@
-class TreasuresController < ApplicationController
-end
