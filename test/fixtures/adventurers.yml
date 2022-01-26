@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  armor_class: 1
+  hit_point_maximum: 1
+  spell_dc: 1
+
+two:
+  name: MyString
+  armor_class: 1
+  hit_point_maximum: 1
+  spell_dc: 1
