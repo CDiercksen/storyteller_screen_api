@@ -4,6 +4,11 @@ class AdventurersController < ApplicationController
         render json:adventurers
     end
 
+    def show
+        adventurer = Adventurer.find(params[:id])
+        render json:adventurer
+    end 
+
     def create 
         # debugger
         adventurers = Adventurer.create(adventurer_params)
