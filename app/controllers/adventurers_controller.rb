@@ -11,9 +11,12 @@ class AdventurersController < ApplicationController
     end 
 
     def create 
-        # debugger
-        adventurers = Adventurer.create(adventurer_params)
-        render json:adventurers, status: :created
+        adventurer = Adventurer.create(adventurer_params)
+        if adventurer.save 
+            render json:adventurer, status: :created
+        else 
+            render json: {error:adventurer.errors.full_messages}, status: :unprocessable_entity
+        end
     end 
 
     def destroy
